@@ -1,0 +1,12 @@
+footer {
+    padding: 10px;
+    color: var(--gris);
+    background-color: var(--negro);
+}
+footer small h4::first-letter {
+    color: var(--naranja);
+}
+small {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,75 @@
+:root {
+	--color_principal: #471400;
+	--color_secundario: #a74300;
+	--color_terciario: whitesmoke;
+	--size_titulo: 80px;/*95px*/
+	--size_parrafo: 35px; /*PANTALLA GRANDE: 35px*/
+}
+.head_titulo h1{
+	text-align: center;
+	font-size: var(--size_titulo);
+	color: var(--color_principal);
+	-webkit-text-stroke: 2px black; /*Le da contorno a la letra del titulo*/
+}
+.head_titulo h1::after{
+	content: "EX";
+	color: var(--color_secundario);
+}
+.container_img_logo { grid-area: logo;}
+.head_titulo { grid-area: titulo; }
+nav { grid-area: navbar; }
+.head {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: 
+    "logo titulo" auto
+    "logo   navbar" /
+    170px    auto;
+}
+.img_logo {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	border-radius: 70%;
+}
+nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+a {
+    text-decoration: none;
+	color: var(--color_terciario);
+    font-size: bold;
+}
+button {
+	color: var(--color_terciario);
+    font-size: bold;
+}
+.botones_navbar {
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: var(--color_secundario);
+	font-size: 20px;
+    font-weight: bold;
+	border: 2px solid black;
+}
+.botones_navbar:hover {
+	transition: .2s;
+	box-shadow:  4px 3px black;
+}
+.botones_navbar a{
+	opacity: .9;
+}
+.linea {
+    border-top: 3px solid black;
+    height: 2px;
+    padding: 0;
+    margin-top: 15px;
+}

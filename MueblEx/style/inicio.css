@@ -1,0 +1,25 @@
+.img3, .img4 {
+	width: 100%;
+	min-height: 500px;
+}
+.img3 { grid-area: img1;}
+.img4 { grid-area: img2; }
+.texto1 { grid-area: texto1; }
+.texto2 { grid-area: texto2; }
+.bloque_cruzado {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: 
+    "texto1 img1"   auto
+    "img2   texto2" auto/
+    50%       50%;
+}
+.texto1, .texto2 {
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+.img_perfil{
+    height: 200px;/*300px*/
+}

@@ -1,0 +1,36 @@
+:root {
+	--color_principal: #0000b1;
+	--color_secundario: #940025;
+	--fondo_texto: #474545a4; 
+	--size_titulo: 60px;
+	--size_sub_titulo: 35px;
+	--size_parrafo: 30px;
+}
+nav {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: bold;
+}
+.botones_navbar {
+	width: 150px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: var(--color_principal);
+	font-size: 20px;
+    font-weight: bold;
+	border: 2px solid black;
+}
+.botones_navbar:hover {
+	transition: .2s;
+	box-shadow:  4px 3px black;
+}
+.linea {
+    border-top: 3px solid black;
+    height: 2px;
+    padding: 0;
+    margin-top: 15px;
+}

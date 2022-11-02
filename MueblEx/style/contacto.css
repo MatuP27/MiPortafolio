@@ -1,0 +1,24 @@
+.redes_sociales {
+    padding-top: 40px;
+}
+.logo_red {
+    width: 200px;
+    height: 200px;
+}
+.redes_sociales {
+    display: flex;
+    justify-content: space-evenly;
+}
+.bloque {
+    align-items: center;
+}
+.red {
+    padding-bottom: 20px;
+}
+.red div{
+    display: flex;
+    align-items: center;
+}
+.red div h1 {
+    padding-left: 10px;
+}

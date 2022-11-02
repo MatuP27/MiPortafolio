@@ -1,0 +1,81 @@
+.contacto{grid-area: izq;}
+.formulario{grid-area: der;}
+    
+main {
+    background-image: url(https://fondosmil.com/fondo/26795.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    font-family: 'Merriweather', serif;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+    background-color: var(--fondo);
+    
+    padding: 0% 14%;
+    width: 100%;
+    height: 100%;
+}
+.informacion {
+    display: flex;
+
+}
+.texto {
+    width: 60%;
+    padding-right: 20px;
+}
+.texto h2 {
+    margin-left: 40px;
+    font-size: 35px;
+    font-weight: 300;
+}
+.contacto .linea {
+    width: 273px;
+}
+.formulario {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+form {
+    text-align: center;
+}
+input {
+    background-color: var(--gris);
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 4px;
+    height: 30px;
+    border-color: var(--negro);
+}
+textarea {
+    background-color: var(--gris);
+    width: 100%;
+
+    border-color: var(--negro);
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+.enviar {
+    cursor: pointer;
+    width: 100px;
+
+    background-color: var(--gris);
+    color: var(--grisOscuro);
+    border-color: var(--negro);
+}
+.enviar:hover {
+    transition: .2s linear;
+
+    color: var(--gris);
+    background-color: var(--naranja);
+    width: 100px;
+}
+

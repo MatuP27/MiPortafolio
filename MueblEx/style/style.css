@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', sans-serif;
+	background-image: url("https://www.todofondos.net/wp-content/uploads/wood-4k-wallpapers-los-mejores-fondos-de-wood-4k-gratis-wallpaperaccess.-fondo-de-pantalla-4k-ultra-hd-de-madera-scaled.jpg");/*"https://fondosmil.com/fondo/27741.jpg"*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+p{
+	font-size: var(--size_parrafo);
+	color: var(--color_terciario);
+	margin: 10px 10px;
+	font-weight: bold;
+	opacity: .9;
+}

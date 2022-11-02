@@ -1,0 +1,118 @@
+:root {
+	--color_principal: #000091;
+	--color_secundario: #940025;
+	--fondo_texto: #474545a4; 
+	--size_titulo: 60px;
+	--size_sub_titulo: 35px;
+	--size_parrafo: 30px;
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Lobster', cursive;
+	font-family: 'Montserrat', sans-serif;
+	background-image: url("https://i.pinimg.com/originals/69/ca/d4/69cad4b7a425f8814c2753078c3fb3dd.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.head_titulo h1{
+	text-align: center;
+	font-size: var(--size_titulo);
+	color: var(--color_principal);
+}
+.head_titulo h1::after{
+	content: "Royale";
+	color: var(--color_secundario);
+}
+header {
+	background-color: var(--fondo_texto);
+}
+.container_img_logo { grid-area: logo;}
+.head_titulo { grid-area: titulo; }
+nav { grid-area: navbar; }
+.head {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: 
+    "logo titulo" 170px
+    "logo   navbar" /
+    170px    auto;
+}
+.img_logo {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	border-radius: 70%;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+}
+.bloque.parallax {
+	height: auto;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	line-height: 600px;
+}
+.parallax.img1{
+	background-image: 
+	url("https://a-static.besthdwallpaper.com/peeka-clash-royale-supercell-mobile-video-game-papel-pintado-5120x2880-73085_55.jpg")
+}
+.parallax.img2{
+	background-image: 
+	url("https://fondosmil.com/fondo/18230.jpg")
+}
+.container h1{
+	font-size: var(--size_titulo);
+	margin-left: 30px;
+}
+.conteiner {
+	font-weight: bold;
+	margin: 20px 20px;
+}
+p{
+	font-size: var(--size_parrafo);
+	margin: 10px 10px;
+	font-weight: bold;
+}
+.conteiner h2{
+	font-size: var(--size_sub_titulo);
+}
+
+.img3 {
+	width: 100%;
+	height: auto;
+}
+.img4 {
+	width: 100%;
+	height: auto;
+}
+.img3 { grid-area: img1;}
+.img4 { grid-area: img2; }
+.texto1 { grid-area: texto1; }
+.texto2 { grid-area: texto2; }
+.bloque_cruzado {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: 
+    "img1 texto1"   auto
+    "texto2   img2" auto/
+    50%       50%;
+}
+.texto1, .texto2 {
+	background-color: var(--fondo_texto);
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+.primero{
+	margin-top: 0%;
+}

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    height: 100vh;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.carrousel{
+    width: 100%;
+    height: 96.3%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+    padding: 7% 15%;
+    position: relative;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemCarrouselArrows > a > i{
+    background-color:var(--negro);
+    padding: 20px;
+    border-radius: 3px;
+    color: var(--gris);
+    font-size: 20px;
+}
+
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+
+    background-color: var(--gris);
+    transition: .2s linear;
+    color: var(--naranja);
+}
+
+#itemCarrousel-1, #itemCarrousel-2, #itemCarrousel-3, #itemCarrousel-4 {
+    background-color: var(--fondo);
+}
+
+
+
+.conteCarrouselController{
+    width: 100%;
+    height: 7.5%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--negro);
+    padding: 15px;
+    padding-left: 30%;
+    padding-right: 35%;
+}
+
+.conteCarrouselController .linea {
+    height: 7px;
+    width: 200%;
+    background-color: var(--gris);
+    border-radius: 2px;
+    margin-top: 15px;
+    padding: 0%;
+}
+.conteCarrouselController .linea:hover {
+    background-color: var(--naranja);
+}
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+}
